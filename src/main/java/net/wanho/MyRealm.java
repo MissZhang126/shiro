@@ -26,7 +26,7 @@ public class MyRealm implements Realm {
             throw new UnknownAccountException("账号错误");
         }
         if (!"123".equals(password)){
-            throw new IncorrectCredentialsException("密码错误");
+            throw new IncorrectCredentialsException("密码错误111");
         }
         return new SimpleAuthenticationInfo(username,password,getName());
     }
